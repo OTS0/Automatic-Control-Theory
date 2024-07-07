@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/robot/manipulator.py", line 19, in <module>
+    mB.position = 0  # 2 ldbufntkm
+  File "/usr/lib/python3/dist-packages/ev3dev/core.py", line 501, in position
+    self._position = self.set_attr_int(self._position, 'position', value)
+  File "/usr/lib/python3/dist-packages/ev3dev/core.py", line 223, in set_attr_int
+    return self._set_attribute(attribute, name, str(int(value)))
+  File "/usr/lib/python3/dist-packages/ev3dev/core.py", line 216, in _set_attribute
+    raise Exception("%s is not connected" % self)
+Exception: LargeMotor(outB) is not connected
